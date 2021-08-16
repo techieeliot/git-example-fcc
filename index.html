@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-  <!--
+    <!--
     <h1>hello world</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
@@ -16,67 +16,81 @@
     <p>Way to go Gus, the Git Master!!!!</p>
     <p>Thomas is here now!</p>
   -->
-<header>
-  <h1>Git Cheat Sheet</h1>
-  <p>Git is the free and open source distributed version control system that's responsible for everything GitHub
-    related that happens locally on your computer. This cheat sheet features the most important and commonly
-    used Git commands for easy reference.</p>
+    <header>
+      <h1>Git Cheat Sheet</h1>
+      <p>
+        Git is the free and open source distributed version control system
+        that's responsible for everything GitHub related that happens locally on
+        your computer. This cheat sheet features the most important and commonly
+        used Git commands for easy reference.
+      </p>
     </header>
     <nav>
-      <a href='#installation&guis'>Installation & GUIS</a>
-      <a href='#setup'>Setup</a>
-      <a href='#setup&init'>Setup & Init</a>
-      <a href='#stage&snapshot'>Stage & Snapshot</a>
-      <a href='#branch&merge'>Branch & Merge</a>
-      <a href='#inspect&compare'>Inspect & Compare</a>
-      <a href='#tracking_path_changes'>Tracking Path Changes</a>
-      <a href='#ignoring_patterns'>Ignoring Patterns</a>
-      <a href='#share&update'>Share & Update</a>
-      <a href='#rewrite_history'>Rewrite History</a>
-      <a href='#temporary_commits'>Temporary Commits</a>
-      </nav>
-    <article id='installation&guis'>
+      <a href="#installation&guis">Installation & GUIS</a>
+      <a href="#setup">Setup</a>
+      <a href="#setup&init">Setup & Init</a>
+      <a href="#stage&snapshot">Stage & Snapshot</a>
+      <a href="#branch&merge">Branch & Merge</a>
+      <a href="#inspect&compare">Inspect & Compare</a>
+      <a href="#tracking_path_changes">Tracking Path Changes</a>
+      <a href="#ignoring_patterns">Ignoring Patterns</a>
+      <a href="#share&update">Share & Update</a>
+      <a href="#rewrite_history">Rewrite History</a>
+      <a href="#temporary_commits">Temporary Commits</a>
+    </nav>
+    <article id="installation&guis">
       <h2>Installation & GUIS</h2>
-      <p>With platform specific installers for Git, GitHub also provides the
-        ease of staying up-to-date with the latest releases of the command
-        line tool while providing a graphical user interface for day-to-day
-        interaction, review, and repository synchronization.</p>
+      <p>
+        With platform specific installers for Git, GitHub also provides the ease
+        of staying up-to-date with the latest releases of the command line tool
+        while providing a graphical user interface for day-to-day interaction,
+        review, and repository synchronization.
+      </p>
       <h3>Github for Windows</h3>
-      <a href='htps://windows.github.com'>htps://windows.github.com</a>
+      <a href="htps://windows.github.com">htps://windows.github.com</a>
       <h3>GitHub for Mac</h3>
-      <a href='htps://mac.github.com'>htps://mac.github.com</a>
-      <p>For Linux and Solaris platforms, the latest release ius available on the official Git web site</p>
+      <a href="htps://mac.github.com">htps://mac.github.com</a>
+      <p>
+        For Linux and Solaris platforms, the latest release ius available on the
+        official Git web site
+      </p>
       <h3>Git for All Platforms</h3>
-      <a href='htp://git-scm.com'>htp://git-scm.com</a>
-      </article>
-    <article id='setup'>
+      <a href="htp://git-scm.com">htp://git-scm.com</a>
+    </article>
+    <article id="setup">
       <h2>Setup</h2>
       <p>Configuring user information used across all local repositories</p>
-      <div class='table'>
+      <div class="table">
         <h3>git config --global user.name “[firstname lastname]”</h3>
-        <p>set a name that is identifiable for credit when review version history</p>
+        <p>
+          set a name that is identifiable for credit when review version history
+        </p>
         <h3>git config --global user.email “[valid-email]”</h3>
-        <p>set an email address that will be associated with each history marker</p>
+        <p>
+          set an email address that will be associated with each history marker
+        </p>
         <h3>git config --global color.ui auto</h3>
         <p>set automatic command line coloring for Git for easy reviewing</p>
       </div>
-      </article>
-    <article id='setup&init'>
+    </article>
+    <article id="setup&init">
       <h2>Setup & Init</h2>
       <p>Configuring user information, initializing and cloning repositories</p>
-      <div class='table'>
+      <div class="table">
         <h3>git init</h3>
         <p>initialize an existing directory as a Git repository</p>
         <h3>git clone [url]</h3>
         <p>retrieve an entire repository from a hosted location via URL</p>
       </div>
-      </article>
-    <article id='stage&snapshot'>
+    </article>
+    <article id="stage&snapshot">
       <h2>Stage & Snapshot</h2>
       <p>Working with snapshots and the Git staging area</p>
-      <div class='table'>
+      <div class="table">
         <h3>git status</h3>
-        <p>show modified files in working directory, staged for your next commit</p>
+        <p>
+          show modified files in working directory, staged for your next commit
+        </p>
         <h3>git add [file]</h3>
         <p>add a file as it looks now to your next commit (stage)</p>
         <h3>git reset [file]</h3>
@@ -88,27 +102,34 @@
         <h3>git commit -m “[descriptive message]”</h3>
         <p>commit your staged content as a new commit snapshot</p>
       </div>
-      </article>
-    <article id='branch&merge'>
+    </article>
+    <article id="branch&merge">
       <h2>Branch & Merge</h2>
-      <p>Isolating work in branches, changing context, and integrating changes</p>
-      <div class='table'>
+      <p>
+        Isolating work in branches, changing context, and integrating changes
+      </p>
+      <div class="table">
         <h3>git branch</h3>
-        <p>list your branches. a * will appear next to the currently active branch</p>
+        <p>
+          list your branches. a * will appear next to the currently active
+          branch
+        </p>
         <h3>git branch [branch-name]</h3>
         <p>create a new branch at the current commit</p>
         <h3>git checkout</h3>
-        <p>switch to another branch and check it out into your working directory</p>
+        <p>
+          switch to another branch and check it out into your working directory
+        </p>
         <h3>git merge [branch]</h3>
         <p>merge the specified branch’s history into the current one</p>
         <h3>git log</h3>
         <p>show all commits in the current branch’s history</p>
       </div>
-      </article>
-    <article id='inspect&compare'>
+    </article>
+    <article id="inspect&compare">
       <h2>Inspect & Compare</h2>
       <p>Examining logs, diffs and object information</p>
-      <div class='table'>
+      <div class="table">
         <h3>git log</h3>
         <p>show the commit history for the currently active branch</p>
         <h3>git log branchB..branchA</h3>
@@ -120,11 +141,11 @@
         <h3>git show [SHA]</h3>
         <p>show any object in Git in human-readable format</p>
       </div>
-      </article>
-    <article id='tracking_path_changes'>
+    </article>
+    <article id="tracking_path_changes">
       <h2>Tracking Path Changes</h2>
       <p>Versioning file removes and path changes</p>
-      <div class='table'>
+      <div class="table">
         <h3>git rm [file]</h3>
         <p>delete the file from project and stage the removal for commit</p>
         <h3>git mv [existing-path] [new-path]</h3>
@@ -132,49 +153,54 @@
         <h3>git log --stat -M</h3>
         <p>show all commit logs with indication of any paths that moved</p>
       </div>
-      </article>
-    <article id='ignoring_patterns'>
+    </article>
+    <article id="ignoring_patterns">
       <h2>Ignoring Patterns</h2>
       <p>Preventing unintentional staging or commiting of files</p>
-      <div class='table'>
-        <h3>logs/
-          *.notes
-          pattern*/</h3>
-        <p>Save a file with desired paterns as .gitignore with either direct string matches or wildcard globs.</p>
+      <div class="table">
+        <h3>logs/ *.notes pattern*/</h3>
+        <p>
+          Save a file with desired paterns as .gitignore with either direct
+          string matches or wildcard globs.
+        </p>
         <h3>git config --global core.excludesfile [file]</h3>
         <p>system wide ignore patern for all local repositories</p>
       </div>
-      </article>
-    <article id='share&update'>
+    </article>
+    <article id="share&update">
       <h2>Share & Update</h2>
       <p>Retrieving updates from another repository and updating local repos</p>
-      <div class-'table'>
+      <div class="table">
         <h3>git remote add [alias] [url]</h3>
         <p>add a git URL as an alias</p>
         <h3>git fetch [alias]</h3>
         <p>fetch down all the branches from that Git remote</p>
         <h3>git merge [alias]/[branch]</h3>
-        <p>merge a remote branch into your current branch to bring it up to date</p>
+        <p>
+          merge a remote branch into your current branch to bring it up to date
+        </p>
         <h3>git push [alias] [branch]</h3>
         <p>Transmit local branch commits to the remote repository branch</p>
         <h3>git pull</h3>
         <p>fetch and merge any commits from the tracking remote branch</p>
       </div>
-      </article>
-    <article id='rewrite_history'>
+    </article>
+    <article id="rewrite_history">
       <h2>Rewrite History</h2>
       <p>Rewriting branches, updating commits and clearing history</p>
-      <div class='table'>
+      <div class="table">
         <h3>git rebase [branch]</h3>
         <p>apply any commits of current branch ahead of specified one</p>
         <h3>git reset --hard [commit]</h3>
         <p>clear staging area, rewrite working tree from specified commit</p>
       </div>
-      </article>
-    <article id='temporary_commits'>
+    </article>
+    <article id="temporary_commits">
       <h2>Temporary Commits</h2>
-      <p>Temporarily store modified, tracked files in order to change branches</p>
-      <div class='table'>
+      <p>
+        Temporarily store modified, tracked files in order to change branches
+      </p>
+      <div class="table">
         <h3>git stash</h3>
         <p>Save modified and staged changes</p>
         <h3>git stash list</h3>
@@ -184,12 +210,15 @@
         <h3>git stash drop</h3>
         <p>discard the changes from top of stash stack</p>
       </div>
-      </article>
+    </article>
     <footer>
       <h2><b>GitHub</b> Education</h2>
-      <p>Teach and learn beter, together. GitHub is free for students and teachers. Discounts available for other educational uses.</p>
+      <p>
+        Teach and learn beter, together. GitHub is free for students and
+        teachers. Discounts available for other educational uses.
+      </p>
       <address>education@github.com</address>
-      <a href='https://education.github.com/'>education.github.com</a>
-      </footer>
+      <a href="https://education.github.com/">education.github.com</a>
+    </footer>
   </body>
 </html>
