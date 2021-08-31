@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+    background-color: black;
+    color: lightgray;
+    position: relative;
+    font-size: 1.3rem;
+}
+header {
+    margin: 0 10vw 2vh;
+}
+a {
+    font-family: 'Cutive Mono', monospace;
+    text-decoration: none;
+    color: lightgray;
+}
+a:hover {
+    color: darkgray
+}
+h1, h2, h3, h4 {
+    font-family: 'Source Code Pro', monospace;
+}
+p {
+    font-family: 'Cutive Mono', monospace;
+}
+article {
+    margin: 20px 21vw 0 21vw;
+    padding: 12px;
+    border-bottom: gray dotted;
+}
+nav {
+    position: sticky;
+    left: 5px;
+    top: 20px;
+    height: 10px;
+    overflow: visible;
+    width: 20vw;
+    padding: 0;
+}
+nav a {
+    display: block;
+    margin: .5rem 0;
+    border-bottom: lightgray 1px;
+}
+
+.table {
+    padding: 1px 16px;
+    border-radius: 3px;
+    background-color: rgb(25, 28, 32);
+    display: block;
+}
+.table p, .table h3 {
+    display: flex;
+}
+footer {
+    margin: 35px 25px 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer p {
+    max-width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
